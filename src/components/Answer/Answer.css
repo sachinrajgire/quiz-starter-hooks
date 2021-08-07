@@ -15,6 +15,23 @@
    font-size: 22px;
    cursor: pointer;
 }
+.answer-selected
+{
+   width: 80%;
+   min-height: 40px;
+   color: #fff;
+   background-color: lightblue;
+   box-shadow: 2px 2px 2px 2px #888888;
+   border-radius: 5px;
+   margin: 10px;
+   text-align: left;
+   line-height: 40px;
+   padding: 10px;
+   padding-left: 3%;
+   display: inline-block;
+   font-size: 22px;
+   cursor: pointer;
+}
 
 .answer:hover{
   background-color: #f47d39;

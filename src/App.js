@@ -23,7 +23,7 @@ function handleNext () {
   setCurrentQuestion(currentQuestion + 1)
 }
 
-function recordAnswer (chosenAnswerId) {
+function handleRecordAnswer (chosenAnswerId) {
 let copyCurrentAnswers = [...recordAnswers]
 const doesEntryExist = copyCurrentAnswers.find(i=>i[0]==currentQuestion)
 console.log(doesEntryExist,'doesEntryExist');
@@ -49,8 +49,11 @@ setRecordAnswers(extractOtherValues)
      <h4>{cqDetails.subQuestion}</h4>
       <Answer
       answers={cqDetails.answers}
-      recordAnswer={recordAnswer}
+      handleRecordAnswer={handleRecordAnswer}
+      currentQuestion={currentQuestion}
+      recordAnswers={recordAnswers}
       />
+      
       <Button disable={currentQuestion === qList.length} onClick={()=>setCurrentQuestion(currentQuestion-1)}>Previous</Button>
       <Button disable={currentQuestion === qList.length} onClick={()=>handleNext()}>Next</Button>
       </div>
