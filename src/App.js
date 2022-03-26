@@ -41,7 +41,7 @@ setRecordAnswers(extractOtherValues)
 
   return (
     <div className="App">
-     <div className="topDiv" > Welcome Sachin Rajgire  </div>
+     <div className="topDiv" > Welcome Wynisco  </div>
      {!showResults && 
      <div>
      <h3>{`${currentQuestion} of ${qList.length}`}</h3>
